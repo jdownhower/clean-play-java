@@ -1,19 +1,20 @@
-import org.junit.*;
+package test;
 
-import play.mvc.*;
-import play.test.*;
-import play.libs.F.*;
+import org.junit.Test;
+import play.libs.F.Callback;
+import play.test.TestBrowser;
 
+import static org.junit.Assert.assertTrue;
 import static play.test.Helpers.*;
-import static org.junit.Assert.*;
 
-import static org.fluentlenium.core.filter.FilterConstructor.*;
-
+/**
+ * Integration tests for application.
+ */
 public class IntegrationTest {
 
     /**
-     * add your integration test here
-     * in this example we just check if the welcome page is being shown
+     * Add your integration test here
+     * in this example we just check if the welcome page is being shown.
      */
     @Test
     public void test() {
